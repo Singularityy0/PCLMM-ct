@@ -4,3 +4,6 @@ members = [
 ]
 
 resolver ="2"
+[workspace.dependencies]
+ruint = { version = "1.12", default-features = false }
+proptest = "1.5"

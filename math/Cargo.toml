@@ -6,6 +6,11 @@ description = "stateless, no-std mathematical engine for PCLMM"
 
 [dependencies]
 primitive-types = {version = "0.12.1", default-features = false}
+ruint = { workspace = true } #prefer using this over primitive-types , it is vastly superior in my opinion
 
 [dev-dependencies]
-proptest = "1.2.0"
+proptest = { workspace = true }
+
+[features]
+default = ["std"]
+std = ["ruint/std"]
