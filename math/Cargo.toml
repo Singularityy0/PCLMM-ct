@@ -1,0 +1,11 @@
+[package]
+name = "math"
+version = "0.1.0"
+edition = "2024"
+description = "stateless, no-std mathematical engine for PCLMM"
+
+[dependencies]
+primitive-types = {version = "0.12.1", default-features = false}
+
+[dev-dependencies]
+proptest = "1.2.0"
