@@ -30,11 +30,7 @@ Panics are an attack vector. A malicious actor can force a panic to consume comp
 - **DO** return `Result`. Check your bounds before you calculate.
 
 
-## Pull Request Lifecycle
-
-1. **Fork & Branch:** Create a branch prefixed with your feature (e.g., `math/tick-bitmap` or `prog/initialize-pool`).
-2. **Implement:** Write your business logic adhering to the rules above.
-3. **Test:** Ensure your code passes all existing tests. If you are adding a new mathematical feature, you must add a corresponding `proptest` or hardcoded vector to validate edge cases.
-4. **Submit PR:** Request a review from a Core Maintainer. CI will automatically run `cargo clippy`, `cargo fmt`, and the test suite.
-
-> "In Web2, you write code to get the correct answer. In Web3, you write code to get the correct answer within strict hardware limits, while under constant attack. Manage your bits." — PCLMM Core
+### what to do
+0. git clone -b scaffold https://github.com/Singularityy0/PCLMM-ct.git
+1. cd pclmm-ct
+2. git switch -c feature/your-name-mat
