@@ -4,7 +4,7 @@
 use crate::{MathError, Result, U256, U512};
 
 /// note that a standard 64 bit cpu cannot store a 256 bits at once, so i'll be using the crate ruint , it breaks down
-/// a u256 down  into an array ogf four 64 bit chunks , called limbs..
+/// a u256 dgit own  into an array ogf four 64 bit chunks , called limbs..
 /// please read the function code carefully, it is very intuitive once you understand the concept of limbs.
 fn to_u512(x: U256) -> U512 {
     let l = x.as_limbs();
